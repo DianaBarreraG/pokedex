@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="250" width="250">
+        </div>
+    </header>
+    <div name="cuerpo" id="cuerpo">
+        <div name="circulo1" id="circulo1"></div>
+        <div name="circulo2" id="circulo2"></div>
+        <div name="circulo3" id="circulo3"></div>
+        <div name="circulo4" id="circulo4"></div>
+
+        <div name="pantalla1" id="pantalla1">
+            <div name="pantalla2" id="pantalla2">
+                <div name="buscar" id="buscar">
+                    <input type="text" placeholder="Buscar nombre o número" id="pokeName" name="pokeName">
+                    <button onclick="fetchPokemon()" style="font-family: 'Fredoka', sans-serif;">BUSCAR</button>
+                </div>
+                <div id="datos">
+                    <h4>Estadísticas</h4>
+                    <section class="row">
+                        <div class="col-6">HP: </div>
+                        <div id="numero"> 0</div>
+                    </section>
+                    <section class="row">
+                        <div class="col-6">Attack: </div>
+                        <div id="attack" class="col-6"> 0</div>
+                    </section>
+                    <section class="row">
+                      <div class="col-6">Defense: </div>
+                        <div id="defense" class="col-6">0</div>
+                    </section>
+                    <section class="row">
+                      <div class="col-6">Special Attack: </div>
+                      <div id="specialAttack" class="col-6">0</div>
+                    </section>
+                    <section class="row">   
+                      <div class="col-6">Special Defense: </div>
+                        <div id="specialDefense" class="col-6"> 0 </div>
+                    </section>
+                    <section class="row">
+                      <div class="col-6">Speed: </div>
+                        <div id="speed" class="col-6"> 0 </div>
+                    </section><br>
+                </div>
+
+                <div id="imagen">
+                    <img src="./img/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">  
+                </div>
+
+                <div id="nombre">
+                    <section class="row">
+                        <div class="col-6 item7">POKEMON: </div>
+                        <div id="pokemon" class="col-6"></div>
+                    </section>
+                    <section class="row">   
+                        <div class="col-6 item8">Type: </div>
+                        <div id="types" class="col-6 item8"></div>
+                    </section>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
